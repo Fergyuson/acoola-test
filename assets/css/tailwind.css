@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Переменные и классы */
+@layer base {
+    :root {
+        --color-primary-from: #7b66ff;
+        --color-primary-to:   #845fff;
+        --color-accent:       #d9ff43;
+    }
+}
