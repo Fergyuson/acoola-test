@@ -2,7 +2,7 @@
 import ModalWrapper from '~/components/ui/ModalWrapper.vue'
 import BaseButton   from '~/components/ui/BaseButton.vue'
 
-import HeroSlider from '~/components/hero/HeroSlider.vue'
+import HeroSection from '~/components/hero/HeroSection.vue'
 import ServicesSlider from '~/components/services/ServicesSlider.vue'
 import PriceCalculator from '~/components/calculator/PriceCalculator.vue'
 import { useModal } from '~/composables/useModal'
@@ -10,19 +10,23 @@ const { open } = useModal()
 </script>
 
 <template>
-  <main class="space-y-24">
+  <main class="space-y-24 bg-gray-200">
     <!-- Hero -->
-    <HeroSlider />
+    <HeroSection />
 
     <!-- Services -->
     <section id="services" class="container mx-auto">
-      <h2 class="mb-8 text-3xl font-bold">Наши услуги</h2>
+      <h2 class="mb-8 bg-gray-200 text-[#4B4B4B] text-3xl font-bold">Наши услуги</h2>
       <ServicesSlider />
     </section>
 
     <!-- Calculator -->
     <section id="calc" class="container mx-auto">
       <PriceCalculator @open-modal="open" />
+    </section>
+    <section id="services" class="container mx-auto">
+      <h2 class="mb-8 bg-gray-200 text-[#4B4B4B] text-3xl font-bold">Футер</h2>
+      <footer />
     </section>
   </main>
 
