@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import ModalWrapper from '~/components/ui/ModalWrapper.vue'
+import BaseButton   from '~/components/ui/BaseButton.vue'
+
 import HeroSlider from '~/components/hero/HeroSlider.vue'
 import ServicesSlider from '~/components/services/ServicesSlider.vue'
 import PriceCalculator from '~/components/calculator/PriceCalculator.vue'

@@ -4,6 +4,7 @@ const { isOpen, close, content } = useModal()
 </script>
 
 <template>
+  <slot v-if="false" :content="content" />
   <Teleport to="body">
     <transition name="fade">
       <div
